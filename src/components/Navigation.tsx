@@ -1,14 +1,14 @@
 import React from 'react';
-import '../styles/Navigation.scss'; 
+import styles from '../styles/Navigation.module.scss'; 
 
 const Navigation: React.FC = () => {
   return (
-    <nav>
-      <ul>
-        <li><a href="#about">Обо мне</a></li>
-        <li><a href="#skills">Навыки</a></li>
-        <li><a href="#projects">Проекты</a></li>
-        <li><a href="#contact">Контакты</a></li>
+    <nav className={styles.navbar}>
+      <ul className={styles.navList}>
+        <li className={styles.navItem}>Главная</li>
+        <li className={styles.navItem}>Обо мне</li>
+        <li className={styles.navItem}>Проекты</li>
+        <li className={styles.navItem}>Контакты</li>
       </ul>
     </nav>
   );

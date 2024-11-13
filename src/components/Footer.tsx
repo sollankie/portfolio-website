@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/Footer.scss'; 
+import styles from '../styles/Footer.module.scss'; 
 
 const Footer: React.FC = () => {
   return (
-    <footer>
-      <p>© 2024 Мое резюме. Все права защищены.</p>
+    <footer className={styles.footer}>
+      <p className={styles.text}>© 2024 Мой сайт</p>
     </footer>
   );
 };

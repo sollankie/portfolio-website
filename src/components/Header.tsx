@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/Header.scss';
+import styles from '../styles/Header.module.scss'; 
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <h1>Мое резюме</h1>
+    <header className={styles.header}>
+      <h1 className={styles.title}>Добро пожаловать на мой сайт!</h1>
     </header>
   );
 };

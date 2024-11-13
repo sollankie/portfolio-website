@@ -1,13 +1,15 @@
 import React from 'react';
-import '../styles/AboutMe.scss'; 
+import styles from '../styles/AboutMe.module.scss'; 
 
-const AboutMe: React.FC = () => {
+const About: React.FC = () => {
   return (
-    <section id="about">
-      <h2>Обо мне</h2>
-      <p>Я разработчик с опытом работы с React и TypeScript. Мне нравится создавать интерфейсы, которые удобны для пользователей.</p>
+    <section id="about" className={styles.about}>
+      <h2 className={styles.title}>Обо мне</h2>
+      <p className={styles.description}>
+        Я разработчик, который любит создавать уникальные и удобные веб-приложения.
+      </p>
     </section>
   );
 };
 
-export default AboutMe;
+export default About;
