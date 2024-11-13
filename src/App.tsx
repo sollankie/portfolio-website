@@ -4,13 +4,14 @@ import './App.css';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import AboutMe from './components/AboutMe';
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <Header /> 
       <Navigation/>
-      <p>Добро пожаловать на мое резюме!</p>
+      <AboutMe/>
       <Footer/>
     </div>
   );
