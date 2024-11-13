@@ -3,9 +3,9 @@ import styles from '../styles/Footer.module.scss';
 
 const Footer: React.FC = () => {
   return (
-    <footer className={styles.footer}>
+    <section id='footer' className={styles.footer}>
       <p className={styles.text}>© 2024 Мой сайт</p>
-    </footer>
+    </section>
   );
 };
 

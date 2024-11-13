@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from '../styles/Skills.module.scss'; 
+import styles from '../styles/Skills.module.scss';
+
 const Skills: React.FC = () => {
   return (
     <section id="skills" className={styles.skills}>
