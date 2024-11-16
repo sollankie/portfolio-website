@@ -3,7 +3,7 @@ import styles from '../styles/Skills.module.scss';
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className={styles.skills}>
+    <section id="skills" className={styles.container}>
       <h2 className={styles.title}>Мои навыки</h2>
       <ul className={styles.skillsList}>
         <li className={styles.skill}>React</li>

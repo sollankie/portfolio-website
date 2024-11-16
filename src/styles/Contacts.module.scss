@@ -1,0 +1,17 @@
+.contactList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactButton {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+}
+
+.contactButton:hover {
+  background-color: #218838;
+}
