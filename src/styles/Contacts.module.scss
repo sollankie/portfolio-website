@@ -1,17 +1,54 @@
-.contactList {
+.container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Размещаем элементы вертикально */
+  align-items: center; /* Центрируем по горизонтали */
+  justify-content: center; /* Центрируем по вертикали */
+  padding: 50px 20px; /* Отступы по бокам и сверху/снизу */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.list {
+  display: flex; /* Горизонтальное расположение */
+  justify-content: center; /* Выравнивание по центру */
   align-items: center;
+  gap: 40px; /* Отступы между элементами */
+  list-style: none; /* Убираем стандартные маркеры */
+  padding: 0;
+  flex-wrap: wrap; /* Чтобы элементы переносились на следующую строку, если не помещаются */
 }
 
-.contactButton {
-  margin: 0.5rem 0;
-  padding: 0.5rem 1rem;
-  background-color: #28a745;
-  color: white;
-  border-radius: 5px;
+.list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-.contactButton:hover {
-  background-color: #218838;
+.list li svg {
+  font-size: 1.5rem; /* Увеличиваем размер иконки */
+  margin-right: 10px; /* Отступ справа от иконки */
+  color: #333; /* Цвет иконки */
+  transition: color 0.3s ease; /* Плавное изменение цвета */
 }
+
+.list li svg:hover {
+  color: #0073e6; /* Цвет иконки при наведении */
+}
+
+.list a {
+  text-decoration: none;
+  color: #333; /* Цвет текста */
+  font-weight: 500;
+  transition: color 0.3s ease; /* Плавное изменение цвета текста */
+}
+
+.list a:hover {
+  color: #0073e6; /* Цвет текста при наведении */
+}
+
