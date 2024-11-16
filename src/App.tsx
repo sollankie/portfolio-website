@@ -10,6 +10,7 @@ import Skills from './components/Skills';
 import Contacts from './components/Contacts';
 import Education from './components/Education';
 import Experience from './components/Experience';
+import BackToTopButton from './components/ui/BackToTopButton'
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
       <Skills />
       <Experience /> 
       <Projects />
+      <BackToTopButton />
       
        
         

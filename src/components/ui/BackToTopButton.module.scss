@@ -1,0 +1,46 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0; /* Начальное состояние - невидимая */
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
+  
+    /* Плавное появление кнопки */
+    &.visible {
+      opacity: 1; /* Кнопка становится видимой */
+    }
+  
+    /* Эффект при наведении */
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1); /* Увеличение при наведении */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+  
+    @media (min-width: 768px) {
+      width: 70px;
+      height: 70px;
+      font-size: 35px;
+    }
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease; /* Плавное изменение позиции стрелочки */
+  
+    /* Эффект при наведении на стрелочку */
+    .back-to-top:hover & {
+      transform: translateY(-5px); /* Стрелочка летит вверх при наведении */
+    }
+  }
+  
