@@ -1,0 +1,42 @@
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    right: 1rem;
+    z-index: 999;
+  }
+  
+  .burgerIcon, .burgerIconOpen {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: 0.3s ease;
+  }
+  
+  /* Стили для крестика */
+  .burgerIconOpen:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 6px;
+  }
+  
+  .burgerIconOpen:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burgerIconOpen:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -6px;
+  }
+  
+  /* Адаптивность для мобильных устройств */
+  @media (max-width: 768px) {
+    .burger {
+      display: flex; /* Показываем бургер-меню на мобильных устройствах */
+    }
+  }
+  
+  
