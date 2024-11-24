@@ -7,26 +7,25 @@ const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Отслеживаем изменение размера окна
+
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);  // Мобильный экран — меньше 768px
+      setIsMobile(window.innerWidth <= 768);  
     };
     
     window.addEventListener('resize', handleResize);
-    handleResize(); // вызываем сразу, чтобы получить начальное состояние
+    handleResize(); 
     
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);  // Меняем состояние меню
+    setIsMenuOpen(!isMenuOpen);  
   };
 
   return (
     <nav className={styles.nav}>
       {isMobile && (
-        // Бургер-меню для мобильных экранов
         <div className={burgerStyles.burger} onClick={toggleMenu}>
           <div className={isMenuOpen ? burgerStyles.burgerIconOpen : burgerStyles.burgerIcon}></div>
           <div className={isMenuOpen ? burgerStyles.burgerIconOpen : burgerStyles.burgerIcon}></div>
@@ -34,7 +33,6 @@ const Navigation: React.FC = () => {
         </div>
       )}
 
-      {/* Если экран мобильный, показываем скрытое меню, иначе обычное горизонтальное меню */}
       <ul className={`${styles.list} ${isMenuOpen && isMobile ? styles.showMenu : ''}`}>
         <li>
           <Link to="contacts" smooth={true} duration={500} className={styles.link}>Контакты</Link>

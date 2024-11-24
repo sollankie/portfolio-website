@@ -15,7 +15,6 @@
     transition: 0.3s ease;
   }
   
-  /* Стили для крестика */
   .burgerIconOpen:nth-child(1) {
     transform: rotate(45deg);
     position: relative;
@@ -32,10 +31,10 @@
     top: -6px;
   }
   
-  /* Адаптивность для мобильных устройств */
+  
   @media (max-width: 768px) {
     .burger {
-      display: flex; /* Показываем бургер-меню на мобильных устройствах */
+      display: flex; 
     }
   }
   
