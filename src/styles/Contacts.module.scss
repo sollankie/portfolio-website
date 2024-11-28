@@ -1,9 +1,9 @@
 .container {
   display: flex;
-  flex-direction: column; /* Размещаем элементы вертикально */
-  align-items: center; /* Центрируем по горизонтали */
-  justify-content: center; /* Центрируем по вертикали */
-  padding: 50px 20px; /* Отступы по бокам и сверху/снизу */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 50px 20px; 
 }
 
 .title {
@@ -14,14 +14,14 @@
 }
 
 .list {
-  display: flex; /* Горизонтальное расположение */
-  justify-content: center; /* Выравнивание по центру */
+  display: flex; 
+  justify-content: center; 
   align-items: center;
-  gap: 40px; /* Отступы между элементами */
-  list-style: none; /* Убираем стандартные маркеры */
+  gap: 40px; 
+  list-style: none; 
   padding: 0;
-  flex-wrap: wrap; /* Чтобы элементы переносились на следующую строку, если не помещаются */
-}
+  flex-wrap: wrap; 
+  }
 
 .list li {
   display: flex;
@@ -31,24 +31,24 @@
 }
 
 .list li svg {
-  font-size: 1.5rem; /* Увеличиваем размер иконки */
-  margin-right: 10px; /* Отступ справа от иконки */
-  color: #333; /* Цвет иконки */
-  transition: color 0.3s ease; /* Плавное изменение цвета */
+  font-size: 1.5rem; 
+  margin-right: 10px; 
+  color: #333; 
+  transition: color 0.3s ease; 
 }
 
 .list li svg:hover {
-  color: #0073e6; /* Цвет иконки при наведении */
+  color: #0073e6; 
 }
 
 .list a {
   text-decoration: none;
-  color: #333; /* Цвет текста */
+  color: #333; 
   font-weight: 500;
-  transition: color 0.3s ease; /* Плавное изменение цвета текста */
+  transition: color 0.3s ease; 
 }
 
 .list a:hover {
-  color: #0073e6; /* Цвет текста при наведении */
+  color: #0073e6; 
 }
 
